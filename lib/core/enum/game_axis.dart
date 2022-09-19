@@ -1,0 +1,1 @@
+enum GameAxis { up, down }

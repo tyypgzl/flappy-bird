@@ -1,0 +1,4 @@
+enum ObstacleType {
+  first,
+  last;
+}

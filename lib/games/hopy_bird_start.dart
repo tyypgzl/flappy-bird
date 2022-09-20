@@ -1,13 +1,13 @@
 import 'package:flame/components.dart';
-import 'package:flappy_bird/components/parallax/background.dart';
-import 'package:flappy_bird/components/parallax/base.dart';
-import 'package:flappy_bird/components/start/game_text.dart';
-import 'package:flappy_bird/components/start/start_button.dart';
-import 'package:flappy_bird/core/constants/game_constants.dart';
-import 'package:flappy_bird/core/constants/string_constants.dart';
-import 'package:flappy_bird/core/enum/assets.dart';
-import 'package:flappy_bird/core/style/hoopy_bird_style.dart';
-import 'package:flappy_bird/hopy_bird_game.dart';
+import 'package:hopy_bird/components/parallax/background.dart';
+import 'package:hopy_bird/components/parallax/base.dart';
+import 'package:hopy_bird/components/start/game_text.dart';
+import 'package:hopy_bird/components/start/start_button.dart';
+import 'package:hopy_bird/core/constants/game_constants.dart';
+import 'package:hopy_bird/core/constants/string_constants.dart';
+import 'package:hopy_bird/core/enum/assets.dart';
+import 'package:hopy_bird/core/style/hoopy_bird_style.dart';
+import 'package:hopy_bird/hopy_bird_game.dart';
 
 class HopyBirdStart extends Component with HasGameRef<HopyBirdGame> {
   late final Sprite startNormalButton;

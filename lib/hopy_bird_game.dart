@@ -3,11 +3,11 @@ import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
 import 'package:flame_audio/audio_pool.dart';
 import 'package:flame_audio/flame_audio.dart';
-import 'package:flappy_bird/core/constants/game_constants.dart';
-import 'package:flappy_bird/core/enum/assets.dart';
-import 'package:flappy_bird/core/enum/game_difficulty.dart';
-import 'package:flappy_bird/games/hopy_bird_home.dart';
-import 'package:flappy_bird/games/hopy_bird_start.dart';
+import 'package:hopy_bird/core/constants/game_constants.dart';
+import 'package:hopy_bird/core/enum/assets.dart';
+import 'package:hopy_bird/core/enum/game_difficulty.dart';
+import 'package:hopy_bird/games/hopy_bird_home.dart';
+import 'package:hopy_bird/games/hopy_bird_start.dart';
 
 class HopyBirdGame extends FlameGame
     with HasTappableComponents, HasCollisionDetection {
@@ -20,6 +20,7 @@ class HopyBirdGame extends FlameGame
   late final double birdAxisY;
   late final AudioPool hop;
   late final AudioPool yat;
+  late final int score;
 
   @override
   bool get debugMode => true;
@@ -32,6 +33,7 @@ class HopyBirdGame extends FlameGame
     hop = await FlameAudio.createPool(Assets.hop.path, maxPlayers: 1);
     yat = await FlameAudio.createPool(Assets.yat.path, maxPlayers: 1);
 
+    score = 0;
     screenWidth = size[0];
     screenHeight = size[1];
     birdAxisY = screenHeight / 2 - GameConst.birdSize / 2;

@@ -7,7 +7,7 @@ class GameConst {
   static const double jumpHeight = 60;
 
   /// Falling speed
-  static const double gravity = 100;
+  static const double gravity = 140;
 
   /// Parallax sliding speed
   static const double gameSpeed = 100;

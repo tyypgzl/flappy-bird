@@ -1,7 +1,7 @@
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
-import 'package:flappy_bird/core/enum/assets.dart';
-import 'package:flappy_bird/hopy_bird_game.dart';
+import 'package:hopy_bird/core/enum/assets.dart';
+import 'package:hopy_bird/hopy_bird_game.dart';
 
 class Player extends SpriteComponent
     with HasGameRef<HopyBirdGame>, CollisionCallbacks {

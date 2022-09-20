@@ -1,6 +1,6 @@
 import 'package:flame/components.dart';
-import 'package:flappy_bird/core/style/hoopy_bird_style.dart';
 import 'package:flutter/material.dart';
+import 'package:hopy_bird/core/style/hoopy_bird_style.dart';
 
 class GameText extends TextComponent {
   final TextStyle? textStyle;

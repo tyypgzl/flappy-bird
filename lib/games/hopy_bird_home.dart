@@ -1,11 +1,11 @@
 import 'package:flame/components.dart';
 import 'package:flame/experimental.dart';
-import 'package:flappy_bird/components/obstacle/obstacle_manager.dart';
-import 'package:flappy_bird/components/parallax/background.dart';
-import 'package:flappy_bird/components/parallax/base.dart';
-import 'package:flappy_bird/components/player/player_manager.dart';
-import 'package:flappy_bird/core/constants/game_constants.dart';
-import 'package:flappy_bird/hopy_bird_game.dart';
+import 'package:hopy_bird/components/obstacle/obstacle_manager.dart';
+import 'package:hopy_bird/components/parallax/background.dart';
+import 'package:hopy_bird/components/parallax/base.dart';
+import 'package:hopy_bird/components/player/player_manager.dart';
+import 'package:hopy_bird/core/constants/game_constants.dart';
+import 'package:hopy_bird/hopy_bird_game.dart';
 
 class HopyBirdHome extends Component
     with TapCallbacks, HasGameRef<HopyBirdGame> {
@@ -32,7 +32,7 @@ class HopyBirdHome extends Component
   void update(double dt) {
     super.update(dt);
     playerManager.changePositionDown(value: GameConst.gravity * dt);
-    obstacleManager.changePosition(value: GameConst.gameSpeed * dt);
+    //obstacleManager.changePosition(value: GameConst.gameSpeed * dt);
   }
 
   @override

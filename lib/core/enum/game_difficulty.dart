@@ -14,25 +14,14 @@ enum GameDifficulty {
     }
   }
 
-  double get distanceToBorderUp {
+  double get distanceAxisYToGoUpAndDown {
     switch (this) {
       case GameDifficulty.easy:
-        return 200;
+        return 100;
       case GameDifficulty.medium:
         return 150;
       case GameDifficulty.hard:
-        return 100;
-    }
-  }
-
-  double get distanceToBorderDown {
-    switch (this) {
-      case GameDifficulty.easy:
-        return 50;
-      case GameDifficulty.medium:
-        return 40;
-      case GameDifficulty.hard:
-        return 30;
+        return 200;
     }
   }
 }

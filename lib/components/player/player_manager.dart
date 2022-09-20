@@ -1,7 +1,7 @@
 import 'package:flame/components.dart';
-import 'package:flappy_bird/components/player/player.dart';
-import 'package:flappy_bird/core/constants/game_constants.dart';
-import 'package:flappy_bird/hopy_bird_game.dart';
+import 'package:hopy_bird/components/player/player.dart';
+import 'package:hopy_bird/core/constants/game_constants.dart';
+import 'package:hopy_bird/hopy_bird_game.dart';
 
 class PlayerManager extends Component with HasGameRef<HopyBirdGame> {
   late final Player _bird;

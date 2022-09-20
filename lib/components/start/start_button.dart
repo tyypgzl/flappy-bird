@@ -1,6 +1,6 @@
 import 'package:flame/components.dart';
 import 'package:flame/experimental.dart';
-import 'package:flappy_bird/hopy_bird_game.dart';
+import 'package:hopy_bird/hopy_bird_game.dart';
 
 class StartButton extends SpriteComponent
     with TapCallbacks, HasGameRef<HopyBirdGame> {

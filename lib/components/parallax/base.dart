@@ -1,8 +1,8 @@
 import 'package:flame/components.dart';
 import 'package:flame/parallax.dart';
-import 'package:flappy_bird/core/enum/assets.dart';
-import 'package:flappy_bird/hopy_bird_game.dart';
 import 'package:flutter/material.dart';
+import 'package:hopy_bird/core/enum/assets.dart';
+import 'package:hopy_bird/hopy_bird_game.dart';
 
 class BaseParallax extends ParallaxComponent<HopyBirdGame> {
   BaseParallax(this.currentSpeed);
